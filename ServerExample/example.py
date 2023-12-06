@@ -9,6 +9,7 @@ orders_list = {}
 ORDER_REQUIRED_FIELDS = ["items", "address"]
 items_list = ["Пепперони", "Тоскана"]
 
+
 @app.route("/")
 def main_route():
     routes = list(app.url_map.iter_rules())
