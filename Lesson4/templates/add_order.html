@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказ</title>
+</head>
+<body>
+{% for line in data %}
+<div>
+    <h3>Название: {{ line[1] }}</h3>
+    <p>Цена: {{ line[2] }}</p>
+</div>
+<br>
+{% endfor %}
+</body>
+</html>
